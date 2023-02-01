@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: rgb(161, 146, 166);
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#h, #min{
+    font-size: 7rem;
+    font-weight: 700;
+    color: #4A1259;
+}
+
+#sec{
+    font-size: 19.7rem;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #2007268f;
+}
+
+.duz-saat{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 500px;
+    background-color: #042940;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.duz-saat-display{
+    display: none;
+}
+.container-display{
+    display: none;
+}
+
+.akrep{
+    position: absolute;
+    width: 160px;
+    height: 15px;
+    border-radius: 20px;
+    z-index: 1;
+    background-color: #02735E;
+    top: 50%;
+    left: 50%;
+    transform: translate(0,-50%);
+    transform-origin: left ;
+}
+
+.yelkovan{
+    position: absolute;
+    width: 220px;
+    height: 15px;
+    border-radius: 20px;
+    background-color: #02735E;
+    top: 50%;
+    left: 50%;
+    transform: translate(0,-50%);
+    transform-origin: left ;
+}
+
+.saniye{
+    position: absolute;
+    z-index: 2;
+    width: 260px;
+    height: 5px;
+    background-color: #F27405;
+    top: 50%;
+    left: 50%;
+    transform: translate(0,-50%);
+    transform-origin: left ;
+}
+
+.top{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #02735E;
+    border-radius: 50%;
+    border: 5px solid #042940;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.twelve{
+    font-size: 2rem;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%,0);
+    color: rgba(255, 255, 255, .3);
+}
+.three{
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translate(0, -50%);
+    color: rgba(255, 255, 255, .3);
+}
+.six{
+    font-size: 2rem;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%,0);
+    color: rgba(255, 255, 255, .3);
+}
+.nine{
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translate(0, -50%);
+    color: rgba(255, 255, 255, .3);
+}
+
+.btn{
+    position: absolute;
+    font-variant: small-caps;
+    letter-spacing: 5px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: .4rem 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+}
