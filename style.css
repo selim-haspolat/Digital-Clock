@@ -141,6 +141,7 @@ body{
     letter-spacing: 5px;
     top: 10%;
     left: 50%;
+    transition: letter-spacing .2s;
     transform: translate(-50%,-50%);
     padding: .4rem 1rem;
     border: none;

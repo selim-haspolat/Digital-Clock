@@ -30,12 +30,21 @@ const getCurrentTime = () => {
 };
 setInterval(getCurrentTime, 1000);
 
-body.style.backgroundColor = "rgb(161, 146, 166)"
+body.style.backgroundColor = "rgb(161, 146, 166)";
 
 btn.addEventListener("click", (e) => {
   container.classList.toggle("container-display");
   duzSaat.classList.toggle("duz-saat-display");
+  btn.style.letterSpacing = "-8px"
+  const letterSpc = () =>{
+    (btn.style.letterSpacing = "5px")
+  }
+  setTimeout(letterSpc,100)
   body.style.backgroundColor == "rgb(161, 146, 166)"
-    ? (body.style.backgroundColor = "rgb(72, 161, 217)")
-    : (body.style.backgroundColor = "rgb(161, 146, 166)");
+  ? (body.style.backgroundColor = "rgb(72, 161, 217)")(
+    (btn.querySelector("strong").innerText = "analog")
+    )
+    : (body.style.backgroundColor = "rgb(161, 146, 166)")(
+      (btn.querySelector("strong").innerText = "digital")
+      );
 });
