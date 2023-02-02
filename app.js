@@ -40,11 +40,12 @@ btn.addEventListener("click", (e) => {
     (btn.style.letterSpacing = "5px")
   }
   setTimeout(letterSpc,100)
-  body.style.backgroundColor == "rgb(161, 146, 166)"
-  ? (body.style.backgroundColor = "rgb(72, 161, 217)")(
-    (btn.querySelector("strong").innerText = "analog")
-    )
-    : (body.style.backgroundColor = "rgb(161, 146, 166)")(
-      (btn.querySelector("strong").innerText = "digital")
-      );
+  if(body.style.backgroundColor == "rgb(161, 146, 166)"){
+    body.style.backgroundColor = "rgb(72, 161, 217)"
+    btn.querySelector("strong").innerText = "analog"
+  }
+  else{
+    body.style.backgroundColor = "rgb(161, 146, 166)"
+    btn.querySelector("strong").innerText = "digital"
+  }
 });
