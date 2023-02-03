@@ -21,7 +21,7 @@ const getCurrentTime = () => {
   saniye.style.transform = `rotate(${second * 6 - 90}deg)`;
   yelkovan.style.transform = `rotate(${minute * 6 - 90}deg)`;
   akrep.style.transform = `rotate(${hour * 30 + minute * 0.5 - 90}deg`;
-  hour > 10 || (hour = `0${hour}`);
+  hour < 10 && (hour = `0${hour}`);
   minute < 10 && (minute = `0${minute}`);
   second < 10 && (second = `0${second}`);
   h.innerText = hour;
